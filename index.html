@@ -1,25 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="jstein">
-  <title>Git용 시험파일</title>
+    <meta charset="UTF-8">
+    <title>반응형 레이아웃</title>
+
+    <style>
+
+        .wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 800px) {
+
+            .wrapper {
+                max-width: 90%;
+            }
+
+            header, footer {
+                width: 100%;
+            }
+
+            nav, section {
+                float: left;
+            }
+
+            nav {
+                width: 20.83333%;
+                margin-right: 1.041667%;
+            }
+
+            section {
+                width: 78.125%;
+            }
+
+            footer {
+                clear: both;
+            }
+
+        }
+
+        @media screen and (min-width: 1000px) {
+
+            .wrapper {
+                max-width: 66.66667%;
+            }
+
+        }
+
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            color: black;
+            text-align: center;
+            margin: 0;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        header, footer {
+            padding: 20px 0;
+        }
+
+        nav, section {
+            padding: 200px 0;
+        }
+
+    </style>
+
 </head>
-
-<header>
-<h1>Hello Everybody!</h1>
-</header>
-
 <body>
-<h1>한글로 적어봅시다.<br>재돌이가 Git를 공부한데요.</h1>
-<ol>
-  <li><a href="sub/secondPage.html">두 번째 페이지로</a></li>
-</ol>
-<div>여기에서는 master branch를 관리하는 거예요.</div>
-<h3>방금 부터는 github.com에 커밋을 합니다.</h3>
+<div class="wrapper">
+    <h1>반응형 레이아웃</h1>
+    <header>HEADER</header>
+    <nav>NAV</nav>
+    <section>
+    	SECTION<br />
+    	<ul>
+    		<li><a href="sub/secondPage.html">다음 링크</a>
+    	</ul>
+    </section>
+    <footer>FOOTER</footer>
+</div>
 </body>
-
-<footer>
-Created by jstein 2020
-</footer>
 </html>
