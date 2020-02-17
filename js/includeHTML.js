@@ -1,4 +1,5 @@
 // [참고] https://www.w3schools.com/howto/howto_html_include.asp
+// https://kay0426.tistory.com/27
 
 function includeHTML(callback) {
   var z, i, elmnt, file, xhr;
